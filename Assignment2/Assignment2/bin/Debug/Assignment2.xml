@@ -1,0 +1,61 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Assignment2
+</name>
+</assembly>
+<members>
+<member name="M:ConsoleApplication1.Menu.Start">
+	<summary>
+ Displays the menu alternatives for the user.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ConsoleApplication1.Menu">
+	<summary>
+ This is the main menu of the application. A menu with 5 choices is displayed
+  on the screen and, depending on the users input, the respective operation is
+  executed by creating an objectn of the respective class.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ConsoleApplication1.MainProgram.Main">
+	<summary>
+ This is where the program begins when it starts
+ </summary>
+	<remarks></remarks>
+</member><member name="P:ConsoleApplication1.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ConsoleApplication1.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ConsoleApplication1.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:ConsoleApplication1.WholeNumbersForAdd.Start">
+	<summary>
+  Starts the application summation of whole numbers using a for-statement
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ConsoleApplication1.WorkingSchedule.Start">
+	<summary>
+ Starts the application working schedule where there's options to choose from
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ConsoleApplication1.CurrencyConverter.Start">
+	<summary>
+ Starts the application currency coonverter
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ConsoleApplication1.FloatingPointsNumberWhileAdd.Start">
+	<summary>
+ ' Starts the application summation of real numbers using a while-statement
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

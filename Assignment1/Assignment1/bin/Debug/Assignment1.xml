@@ -1,0 +1,74 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Assignment1
+</name>
+</assembly>
+<members>
+<member name="P:ConsoleApplication1.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:ConsoleApplication1.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:ConsoleApplication1.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:ConsoleApplication1.GasPump.ReadInput">
+	<summary>
+ Reads the customers name and choices 
+ Gives appropriate feedback and questions
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ConsoleApplication1.GasPump.Calculate">
+	<summary>
+ Calculates the total sum to pay for the quantity and quality of the gas the customer has chosen
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ConsoleApplication1.GasPump.PrintReciept">
+	<summary>
+ Prints the overview of the choosen options and the sum to pay for the refueling
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ConsoleApplication1.GasPump.ReadName">
+	<summary>
+ Reads the customers name and gives an appropriate reply
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ConsoleApplication1.GasPump.ReadQuantity">
+	<summary>
+ Reads how many liters the customer wants to refuel
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ConsoleApplication1.GasPump.ReadQuality">
+	<summary>
+ Reads the quality of the gas the customer wants
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ConsoleApplication1.GasPump">
+	<summary>
+ This class contains the back end of the gas station
+ It Takes care of the customers wishes ans calculates the total sum to pay 
+ differing on the quality and quantity of gas
+ It also gives the customer an overview of selected options and prices
+ </summary>
+	<remarks></remarks>
+</member><member name="M:ConsoleApplication1.GasStationProg.Main">
+	<summary>
+ This is where the program begins when it starts
+ </summary>
+	<remarks></remarks>
+</member><member name="T:ConsoleApplication1.GasStationProg">
+	<summary>
+ This program is made for pay-at-pump- gas staation. It interacts
+ with the customer and calculates the amount to be paid before filling up the car  
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
