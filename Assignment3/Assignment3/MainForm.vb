@@ -44,7 +44,7 @@ Public Class MainForm
             input(1) = PreviousKM.Text
             input(2) = FuelAmount.Text
             input(3) = PricePerLit.Text
-            carMilage.ReadInput(input)
+            carMilage.ReadInput(input)                              'Reads the input from the Fuelcalculator part of the form
             KmPerLit.Text = CStr(carMilage.KMPerLit)                'Sets the km per liter the fueltank/car can drive
             LitPerMetric.Text = CStr(carMilage.LitPerMetricMile)    'Sets the liter per km the fueltank/car uses
             LitPerKm.Text = CStr(carMilage.LitPerKM)                'Sets the liter per metric mile the fueltank/car uses
@@ -66,19 +66,19 @@ Public Class MainForm
         CostPerKm.Text = String.Empty
     End Sub
     ''' <summary>
-    ''' 
+    ''' The methods that is called when the user clicks the CalorieCalculators calculate button
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     ''' <remarks></remarks>
     Private Sub BMRButton_Click(sender As Object, e As EventArgs) Handles BMRButton.Click
-        BMRResult.Items.Clear()
+        BMRResult.Items.Clear()     'Clears the ListBox's item/rows of text
         Dim input(3) As String
         input(0) = MaleButton.Checked.ToString
         input(1) = Age.Text
         input(2) = Height.Text
         input(3) = Weight.Text
-        bmrCalc.ReadInput(input)
+        bmrCalc.ReadInput(input)    'Reads the input from the Caloriecalculator part of the form
         BMRResult.Items.Add("Your BMR (calories/day)" + vbTab + vbTab + vbTab + bmrCalc.CalculateBMR)
         BMRResult.Items.Add("Calories to maintain your weight" + vbTab + vbTab + CStr(bmrCalc.CalculateMaintain(ActivityLevelPerWeek)))
         BMRResult.Items.Add("Calories to lose 0,5 kg per week" + vbTab + vbTab + CStr(bmrCalc.CalculateMaintain(ActivityLevelPerWeek) - 500))
@@ -86,11 +86,21 @@ Public Class MainForm
         BMRResult.Items.Add("Calories to gain 0,5 kg per week" + vbTab + vbTab + CStr(bmrCalc.CalculateMaintain(ActivityLevelPerWeek) + 500))
         BMRResult.Items.Add("Calories to gain 1 kg per week" + vbTab + vbTab + CStr(bmrCalc.CalculateMaintain(ActivityLevelPerWeek) + 1000))
     End Sub
-
+    ''' <summary>
+    ''' The method that is called when a row is clicked/selected in the ListBox
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub BMRResult_SelectedIndexChanged(sender As Object, e As EventArgs) Handles BMRResult.SelectedIndexChanged
         SelectionLabel.Text = "Selected item: " + CStr(BMRResult.SelectedIndex + 1)
     End Sub
-
+    ''' <summary>
+    ''' The method that is called when the unselect button is clicked
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    ''' <remarks></remarks>
     Private Sub UnselectButton_Click(sender As Object, e As EventArgs) Handles UnselectButton.Click
         BMRResult.ClearSelected()
         SelectionLabel.Text = "Selected item:"
