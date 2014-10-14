@@ -1,0 +1,10 @@
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment3\Assignment3\bin\Debug\Assignment3.exe.config
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment3\Assignment3\bin\Debug\Assignment3.exe
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment3\Assignment3\bin\Debug\Assignment3.pdb
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment3\Assignment3\bin\Debug\Assignment3.xml
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment3\Assignment3\obj\Debug\WindowsApplication1.MainForm.resources
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment3\Assignment3\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment3\Assignment3\obj\Debug\Assignment3.vbproj.GenerateResource.Cache
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment3\Assignment3\obj\Debug\Assignment3.exe
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment3\Assignment3\obj\Debug\Assignment3.xml
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment3\Assignment3\obj\Debug\Assignment3.pdb
