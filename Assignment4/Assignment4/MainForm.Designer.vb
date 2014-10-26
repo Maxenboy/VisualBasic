@@ -43,7 +43,7 @@ Partial Class MainForm
         Me.ToDoBox = New System.Windows.Forms.GroupBox()
         Me.DescriptionLabel = New System.Windows.Forms.Label()
         Me.PrioLabel = New System.Windows.Forms.Label()
-        Me.HourLabel = New System.Windows.Forms.Label()
+        Me.TaskTimeLabel = New System.Windows.Forms.Label()
         Me.DateLabel = New System.Windows.Forms.Label()
         Me.ToDoListBox = New System.Windows.Forms.ListBox()
         Me.MenuStrip.SuspendLayout()
@@ -141,14 +141,14 @@ Partial Class MainForm
         '
         Me.OpenDatafileToolStripMenuItem.Enabled = False
         Me.OpenDatafileToolStripMenuItem.Name = "OpenDatafileToolStripMenuItem"
-        Me.OpenDatafileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenDatafileToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.OpenDatafileToolStripMenuItem.Text = "Open datafile"
         '
         'SaveDatafileToolStripMenuItem
         '
         Me.SaveDatafileToolStripMenuItem.Enabled = False
         Me.SaveDatafileToolStripMenuItem.Name = "SaveDatafileToolStripMenuItem"
-        Me.SaveDatafileToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SaveDatafileToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
         Me.SaveDatafileToolStripMenuItem.Text = "Save datafile"
         '
         'ExitToolStripMenuItem
@@ -191,7 +191,7 @@ Partial Class MainForm
         '
         Me.ToDoBox.Controls.Add(Me.DescriptionLabel)
         Me.ToDoBox.Controls.Add(Me.PrioLabel)
-        Me.ToDoBox.Controls.Add(Me.HourLabel)
+        Me.ToDoBox.Controls.Add(Me.TaskTimeLabel)
         Me.ToDoBox.Controls.Add(Me.DateLabel)
         Me.ToDoBox.Controls.Add(Me.ToDoListBox)
         Me.ToDoBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -206,7 +206,7 @@ Partial Class MainForm
         '
         Me.DescriptionLabel.AutoSize = True
         Me.DescriptionLabel.ForeColor = System.Drawing.Color.Black
-        Me.DescriptionLabel.Location = New System.Drawing.Point(379, 16)
+        Me.DescriptionLabel.Location = New System.Drawing.Point(327, 16)
         Me.DescriptionLabel.Name = "DescriptionLabel"
         Me.DescriptionLabel.Size = New System.Drawing.Size(60, 13)
         Me.DescriptionLabel.TabIndex = 4
@@ -216,21 +216,21 @@ Partial Class MainForm
         '
         Me.PrioLabel.AutoSize = True
         Me.PrioLabel.ForeColor = System.Drawing.Color.Black
-        Me.PrioLabel.Location = New System.Drawing.Point(261, 16)
+        Me.PrioLabel.Location = New System.Drawing.Point(208, 16)
         Me.PrioLabel.Name = "PrioLabel"
         Me.PrioLabel.Size = New System.Drawing.Size(38, 13)
         Me.PrioLabel.TabIndex = 3
         Me.PrioLabel.Text = "Priority"
         '
-        'HourLabel
+        'TaskTimeLabel
         '
-        Me.HourLabel.AutoSize = True
-        Me.HourLabel.ForeColor = System.Drawing.Color.Black
-        Me.HourLabel.Location = New System.Drawing.Point(141, 16)
-        Me.HourLabel.Name = "HourLabel"
-        Me.HourLabel.Size = New System.Drawing.Size(30, 13)
-        Me.HourLabel.TabIndex = 2
-        Me.HourLabel.Text = "Hour"
+        Me.TaskTimeLabel.AutoSize = True
+        Me.TaskTimeLabel.ForeColor = System.Drawing.Color.Black
+        Me.TaskTimeLabel.Location = New System.Drawing.Point(157, 16)
+        Me.TaskTimeLabel.Name = "TaskTimeLabel"
+        Me.TaskTimeLabel.Size = New System.Drawing.Size(30, 13)
+        Me.TaskTimeLabel.TabIndex = 2
+        Me.TaskTimeLabel.Text = "Time"
         '
         'DateLabel
         '
@@ -244,15 +244,18 @@ Partial Class MainForm
         '
         'ToDoListBox
         '
+        Me.ToDoListBox.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToDoListBox.FormattingEnabled = True
         Me.ToDoListBox.HorizontalScrollbar = True
+        Me.ToDoListBox.ItemHeight = 14
         Me.ToDoListBox.Location = New System.Drawing.Point(3, 29)
         Me.ToDoListBox.Name = "ToDoListBox"
-        Me.ToDoListBox.Size = New System.Drawing.Size(485, 264)
+        Me.ToDoListBox.Size = New System.Drawing.Size(485, 256)
         Me.ToDoListBox.TabIndex = 0
         '
         'MainForm
         '
+        Me.AcceptButton = Me.AddToDo
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(506, 464)
@@ -298,7 +301,7 @@ Partial Class MainForm
     Friend WithEvents ToDoBox As System.Windows.Forms.GroupBox
     Friend WithEvents DescriptionLabel As System.Windows.Forms.Label
     Friend WithEvents PrioLabel As System.Windows.Forms.Label
-    Friend WithEvents HourLabel As System.Windows.Forms.Label
+    Friend WithEvents TaskTimeLabel As System.Windows.Forms.Label
     Friend WithEvents DateLabel As System.Windows.Forms.Label
     Friend WithEvents ToDoListBox As System.Windows.Forms.ListBox
 
