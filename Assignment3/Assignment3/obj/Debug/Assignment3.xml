@@ -6,7 +6,132 @@ Assignment3
 </name>
 </assembly>
 <members>
-<member name="P:WindowsApplication1.My.Resources.Resources.ResourceManager">
+<member name="M:WindowsApplication1.CalorieCalculator.#ctor">
+	<summary>
+ Constructor for the CalorieCalculator
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.CalorieCalculator.ReadInput(System.String[])">
+	<summary>
+ Reads the input from the form and sets the global variables
+ </summary>
+	<param name="input">The argument is a vector with strings, it is converted to double with CDbl</param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.CalorieCalculator.CalculateBMR">
+	<summary>
+ Calculates the persons bmr
+ </summary>
+	<returns>Returns a String with the bmr</returns>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.CalorieCalculator.CalculateMaintain(System.Windows.Forms.GroupBox)">
+	<summary>
+ Calculates the amount of calories to take in to maintain the current weight
+ </summary>
+	<param name="group">The argument is the groupbox that contains the different radiobuttons for the activitylevel per week</param>
+	<returns>Returns a Double value of calories to take in to maintain the current weight</returns>
+	<remarks></remarks>
+</member><member name="T:WindowsApplication1.CalorieCalculator">
+	<summary>
+ The class that reads input from the form and calculates the persons bmr and weightgaining/loss depending on activity level
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.MainForm.#ctor">
+	<summary>
+ Constructor for the form
+ Initialises the form
+ Initialises the default values of the controls
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.MainForm.InitializeGUI">
+	<summary>
+ Initialises the default values of the controls
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.MainForm.CalculateButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ The methods that is called when the user clicks the FuelCalculators calculate button
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.MainForm.ClearAll">
+	<summary>
+ Clears all the FuelCalculators control values
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.MainForm.BMRButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ The methods that is called when the user clicks the CalorieCalculators calculate button
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.MainForm.BMRResult_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ The method that is called when a row is clicked/selected in the ListBox
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.MainForm.UnselectButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ The method that is called when the unselect button is clicked
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:WindowsApplication1.MainForm">
+	<summary>
+ The class that creates the form for FuelCalculator and CalorieCalculator
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.FuelCalculator.#ctor">
+	<summary>
+ Constructor for the FuelCalculator
+ </summary>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.FuelCalculator.ReadInput(System.String[])">
+	<summary>
+ Reads the input from the form and sets the global variables
+ </summary>
+	<param name="input"> The argument is a vector with strings, it's elements are converted to double with CDbl</param>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.FuelCalculator.KMPerLit">
+	<summary>
+ Calculates the km per liter the fueltank/car can drive
+ </summary>
+	<returns>Returns a Double value for km per liter</returns>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.FuelCalculator.LitPerKM">
+	<summary>
+ Calculates the liter per km the fueltank/car uses
+ </summary>
+	<returns>Returns a Double value for liter per km</returns>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.FuelCalculator.LitPerMetricMile">
+	<summary>
+ Calculates the liter per metric mile the fueltank/car uses
+ </summary>
+	<returns>Returns a Double value for liter per metric mile</returns>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.FuelCalculator.LitPerSwedMil">
+	<summary>
+ Calculates the liter per swedish mile the fueltank/car uses
+ </summary>
+	<returns>Returns a Double value for liter per swedish mile</returns>
+	<remarks></remarks>
+</member><member name="M:WindowsApplication1.FuelCalculator.CostPerKM">
+	<summary>
+ Calculates the cost per km the fueltank/car costs
+ </summary>
+	<returns>Returns a Double value for cost per km</returns>
+	<remarks></remarks>
+</member><member name="T:WindowsApplication1.FuelCalculator">
+	<summary>
+ The class that reads input from the form and calculates the different functions such as cost per km etc.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:WindowsApplication1.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>

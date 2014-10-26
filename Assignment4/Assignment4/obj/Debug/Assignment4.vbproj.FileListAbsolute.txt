@@ -1,0 +1,11 @@
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment4\Assignment4\bin\Debug\Assignment4.exe.config
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment4\Assignment4\bin\Debug\Assignment4.exe
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment4\Assignment4\bin\Debug\Assignment4.pdb
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment4\Assignment4\bin\Debug\Assignment4.xml
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment4\Assignment4\obj\Debug\WindowsApplication1.Resources.resources
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment4\Assignment4\obj\Debug\Assignment4.vbproj.GenerateResource.Cache
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment4\Assignment4\obj\Debug\Assignment4.exe
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment4\Assignment4\obj\Debug\Assignment4.xml
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment4\Assignment4\obj\Debug\Assignment4.pdb
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment4\Assignment4\obj\Debug\WindowsApplication1.MainForm.resources
+C:\Users\Max\Desktop\Plugg\Visual Basic\Assignment4\Assignment4\obj\Debug\WindowsApplication1.AboutBox.resources
