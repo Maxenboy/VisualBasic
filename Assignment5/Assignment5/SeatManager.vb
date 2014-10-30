@@ -68,4 +68,16 @@ Public Class SeatManager
         Next
         Return count.ToString
     End Function
+    Public Function showVacantOrReserved(type As String) As String()
+        Dim result As String() = New String(seats) {}
+        Dim index As Integer = 0
+        For i As Integer = 0 To seats
+            If status(i) = type Then
+                result(index) = String.Format("{0,-6}{1,-10}{2,-35}{3,-20}", i, status(i), m_nameList(i), m_priceList(i))
+                index += 1
+            End If
+        Next
+        ReDim Preserve result(index - 1)
+        Return result
+    End Function
 End Class

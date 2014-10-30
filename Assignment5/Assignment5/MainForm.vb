@@ -2,7 +2,7 @@
 Option Explicit On
 Option Strict On
 
-' Created: By Max Åberg 2014-10-28
+' Created: By Max Åberg 2014-10-30
 Public Class MainForm
     Dim seatManager As SeatManager
     Dim nbrOfSeats As Integer = 80
@@ -95,7 +95,7 @@ Public Class MainForm
         End If
     End Sub
     Private Sub updateListBox(result As String())
-        For index As Integer = 0 To nbrOfSeats
+        For index As Integer = 0 To result.Length - 1
             ReservationListBox.Items.Add(result(index))
         Next
         updateLabels(seatManager.getInfo)
@@ -107,6 +107,19 @@ Public Class MainForm
     End Sub
 
     Private Sub ShowComboBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ShowComboBox.SelectedIndexChanged
-
+        Select Case ShowComboBox.SelectedItem.ToString
+            Case "All_Seats"
+                ReserveButton.Enabled = True
+                ReservationListBox.Items.Clear()
+                updateListBox(seatManager.fillListBox)
+            Case "Vacant_Seats"
+                ReserveButton.Enabled = False
+                ReservationListBox.Items.Clear()
+                updateListBox(seatManager.showVacantOrReserved("Vacant"))
+            Case "Reserved_Seats"
+                ReserveButton.Enabled = False
+                ReservationListBox.Items.Clear()
+                updateListBox(seatManager.showVacantOrReserved("Reserved"))
+        End Select
     End Sub
 End Class
