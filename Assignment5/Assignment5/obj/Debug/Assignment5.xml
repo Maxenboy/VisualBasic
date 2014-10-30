@@ -6,7 +6,122 @@ Assignment5
 </name>
 </assembly>
 <members>
-<member name="P:Assignment5.My.Resources.Resources.ResourceManager">
+<member name="M:Assignment5.SeatManager.#ctor(System.Int32)">
+	<summary>
+ The constructor of the seat manager
+ </summary>
+	<param name="maxNbrOfSeats"></param>
+	<remarks></remarks>
+</member><member name="M:Assignment5.SeatManager.fillListBox">
+	<summary>
+ Fills an array with updated values from the different arrays in a formated string
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Assignment5.SeatManager.getName(System.String)">
+	<summary>
+ Gets the name of a reservation
+ </summary>
+	<param name="index"></param>
+	<returns>The name of a reservation</returns>
+	<remarks></remarks>
+</member><member name="M:Assignment5.SeatManager.getPrice(System.String)">
+	<summary>
+ Gets the price of a reservation
+ </summary>
+	<param name="index"></param>
+	<returns>The price of a reservation</returns>
+	<remarks></remarks>
+</member><member name="M:Assignment5.SeatManager.reserve(System.String,System.String,System.Double)">
+	<summary>
+ Simluates a reservation by changing the status, the name and the price in seperate arrays
+ </summary>
+	<param name="seat">the seat (index in the arrays) of the reservation</param>
+	<param name="name">the name provided by the user</param>
+	<param name="price">the price provided by the user</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Assignment5.SeatManager.cancel(System.String)">
+	<summary>
+ Simluates a cancelation of a reservation by changing the status, the name and the price in seperate arrays
+ </summary>
+	<param name="seat">the seat (index in the arrays) of the reservation</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Assignment5.SeatManager">
+	<summary>
+ The class thata manages the reservations and cancelations
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Assignment5.MainForm.#ctor">
+	<summary>
+ Constructor of the form
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Assignment5.MainForm.InitializeGUI">
+	<summary>
+ The default settings of the GUI
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Assignment5.MainForm.CancelRadioButton_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ When the radioButton "Cancel" is clicked, it should not be possible to edit price and name.
+ It also changes the text on the button
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Assignment5.MainForm.ReserveRadioButton_CheckedChanged(System.Object,System.EventArgs)">
+	<summary>
+ When the radioButton "Reserve" is clicked, it should be possible to edit price and name.
+ It also changes the text on the button
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Assignment5.MainForm.ReservationListBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ When a row is clicked/selected in the listbox the seat number is put in the seat number input
+ If the clicked/selected seat isn't vacant the name and price input is updated with data
+ Otherwise the name and price input is cleared 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Assignment5.MainForm.ReserveButton_Click(System.Object,System.EventArgs)">
+	<summary>
+ When the reserved/cancel button is clicked it will either cancel a reservation or reserve a seta, depending on which radiobutton is checked
+ All input is validated and will give an appropriate message if the input doesn't match the standards
+ 
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Assignment5.MainForm.updateListBox(System.String[])">
+	<summary>
+ Updates the Listbox in the GUI
+ </summary>
+	<param name="result">A String array with the data</param>
+	<remarks></remarks>
+</member><member name="M:Assignment5.MainForm.updateLabels(System.String[])">
+	<summary>
+ Updates the status labels for number of seats, number of vacant seats and number of reserved seats
+ </summary>
+	<param name="result">A String array with the data</param>
+	<remarks></remarks>
+</member><member name="M:Assignment5.MainForm.ShowComboBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ When a user changes the selected preview in the Combobox, the ListBox will change its content
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:Assignment5.MainForm">
+	<summary>
+ The class of the form
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Assignment5.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
