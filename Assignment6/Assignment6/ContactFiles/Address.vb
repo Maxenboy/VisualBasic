@@ -1,0 +1,79 @@
+﻿Option Explicit On
+Option Strict On
+
+' Created: By Max Åberg 2014-10-30
+
+Public Class Address
+    Private m_city As String
+    Private m_zipCode As String
+    Private m_street As String
+    Private m_country As Countries
+    Public Sub New()
+        Me.New(String.Empty, String.Empty, String.Empty)
+    End Sub
+    Public Sub New(ByVal street As String, ByVal zip As String, ByVal city As String)
+        Me.New(street, zip, city, Countries.Sverige)
+    End Sub
+
+    Public Sub New(ByVal street As String, ByVal zip As String, ByVal city As String, ByVal country As Countries)
+        Me.m_city = city
+        Me.m_street = street
+        Me.m_zipCode = zip
+        Me.m_country = country
+    End Sub
+
+    Public Sub New(theOther As Address)
+        Me.m_city = theOther.m_city
+        Me.m_street = theOther.m_street
+        Me.m_zipCode = theOther.m_zipCode
+        Me.m_country = theOther.m_country
+    End Sub
+
+    Public Property City() As String
+        Get
+            Return m_city
+        End Get
+        Set(value As String)
+            m_city = value
+        End Set
+    End Property
+
+    Public Property Country() As Countries
+        Get
+            Return m_country
+        End Get
+        Set(value As Countries)
+            m_country = value
+        End Set
+    End Property
+
+    Public Property Street() As String
+        Get
+            Return m_street
+        End Get
+        Set(value As String)
+            m_street = value
+        End Set
+    End Property
+
+    Public Property ZipCode() As String
+        Get
+            Return m_zipCode
+        End Get
+        Set(value As String)
+            m_zipCode = value
+        End Set
+    End Property
+
+    Public Function Validate() As Boolean
+        If m_city = String.Empty Then
+            Return False
+        Else
+            Return True
+        End If
+    End Function
+    Public Overrides Function ToString() As String
+        Dim str As String = String.Format("{0,-20}{1,-10}{2,-10}{3,-10}", m_street, m_zipCode, m_city, m_country)
+        Return str
+    End Function
+End Class
