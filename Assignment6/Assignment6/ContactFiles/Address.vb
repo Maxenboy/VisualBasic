@@ -8,6 +8,7 @@ Public Class Address
     Private m_zipCode As String
     Private m_street As String
     Private m_country As Countries
+    Private m_errMessage As String
     Public Sub New()
         Me.New(String.Empty, String.Empty, String.Empty)
     End Sub
@@ -65,15 +66,21 @@ Public Class Address
         End Set
     End Property
 
+    Public ReadOnly Property errMessage() As String
+        Get
+            Return m_errMessage
+        End Get
+    End Property
+
     Public Function Validate() As Boolean
         If m_city = String.Empty Then
+            m_errMessage = "No city is provided, please do so"
             Return False
-        Else
-            Return True
         End If
+        Return True
     End Function
+
     Public Overrides Function ToString() As String
-        Dim str As String = String.Format("{0,-20}{1,-10}{2,-10}{3,-10}", m_street, m_zipCode, m_city, m_country)
-        Return str
+        Return String.Format("{0,-20}{1,-10}{2,-10}{3,-10}", m_street, m_zipCode, m_city, m_country)
     End Function
 End Class
