@@ -67,10 +67,10 @@ Public Class ContactForm
 
     Private Sub UpdateGUI()
         Dim contacts As String() = m_contacts.GetContactInfo
+        ListBox.Items.Clear()
+        NbrOfRegistredLabel.Text = m_contacts.Count.ToString
         If contacts IsNot Nothing Then
-            ListBox.Items.Clear()
             ListBox.Items.AddRange(contacts)
-            NbrOfRegistredLabel.Text = m_contacts.Count.ToString
         End If
     End Sub
 
@@ -78,5 +78,11 @@ Public Class ContactForm
         DeleteButton.Enabled = True
         ChangeButton.Enabled = True
         UpdateTextBoxes()
+    End Sub
+
+    Private Sub DeleteButton_Click(sender As Object, e As EventArgs) Handles DeleteButton.Click
+        If m_contacts.DeleteContact(ListBox.SelectedIndex) Then
+            UpdateGUI()
+        End If
     End Sub
 End Class
