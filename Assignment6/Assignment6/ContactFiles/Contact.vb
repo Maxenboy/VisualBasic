@@ -68,6 +68,6 @@ Public Class Contact
     End Function
 
     Public Overrides Function ToString() As String
-        Return String.Format("{0,-30}{1}", FullName, m_address.ToString)
+        Return String.Format("{0,-25}{1}", FullName, m_address.ToString)
     End Function
 End Class

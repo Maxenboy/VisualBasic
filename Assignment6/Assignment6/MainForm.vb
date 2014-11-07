@@ -85,4 +85,11 @@ Public Class ContactForm
             UpdateGUI()
         End If
     End Sub
+
+    Private Sub ChangeButton_Click(sender As Object, e As EventArgs) Handles ChangeButton.Click
+        Dim contact As Contact = New Contact(FirstNameTextBox.Text, LastNameTextBox.Text, ReadAddress)
+        If m_contacts.ChangeContact(contact, ListBox.SelectedIndex) Then
+            UpdateGUI()
+        End If
+    End Sub
 End Class
