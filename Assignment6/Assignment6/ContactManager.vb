@@ -11,7 +11,7 @@ Public Class ContactManager
     End Sub
 
     Public Function GetContact(index As Integer) As Contact
-        If index > 0 And index < m_contactRegister.Count Then
+        If index >= 0 And index < m_contactRegister.Count Then
             Return New Contact(m_contactRegister(index).FirstName, m_contactRegister(index).LastName, m_contactRegister(index).AddressData)
         End If
         Return Nothing
@@ -55,6 +55,7 @@ Public Class ContactManager
         End If
         Return False
     End Function
+
 
     Public Function GetContactInfo() As String()
         If (m_contactRegister.Count = 0) Then Return Nothing

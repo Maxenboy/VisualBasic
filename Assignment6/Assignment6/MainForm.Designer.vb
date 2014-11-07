@@ -33,7 +33,7 @@ Partial Class ContactForm
         Me.StreetLabel = New System.Windows.Forms.Label()
         Me.CityLabel = New System.Windows.Forms.Label()
         Me.ZipCodeLabel = New System.Windows.Forms.Label()
-        Me.StreeTextBox = New System.Windows.Forms.TextBox()
+        Me.StreetTextBox = New System.Windows.Forms.TextBox()
         Me.CityTextBox = New System.Windows.Forms.TextBox()
         Me.ZipCodeTextBox = New System.Windows.Forms.TextBox()
         Me.ListBox = New System.Windows.Forms.ListBox()
@@ -100,13 +100,13 @@ Partial Class ContactForm
         Me.GroupBox2.Controls.Add(Me.StreetLabel)
         Me.GroupBox2.Controls.Add(Me.CityLabel)
         Me.GroupBox2.Controls.Add(Me.ZipCodeLabel)
-        Me.GroupBox2.Controls.Add(Me.StreeTextBox)
+        Me.GroupBox2.Controls.Add(Me.StreetTextBox)
         Me.GroupBox2.Controls.Add(Me.CityTextBox)
         Me.GroupBox2.Controls.Add(Me.ZipCodeTextBox)
         Me.GroupBox2.Location = New System.Drawing.Point(12, 92)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(324, 128)
-        Me.GroupBox2.TabIndex = 0
+        Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Address"
         '
@@ -126,7 +126,7 @@ Partial Class ContactForm
         Me.CountryComboBox.Location = New System.Drawing.Point(128, 97)
         Me.CountryComboBox.Name = "CountryComboBox"
         Me.CountryComboBox.Size = New System.Drawing.Size(184, 21)
-        Me.CountryComboBox.TabIndex = 6
+        Me.CountryComboBox.TabIndex = 8
         '
         'StreetLabel
         '
@@ -155,41 +155,43 @@ Partial Class ContactForm
         Me.ZipCodeLabel.TabIndex = 3
         Me.ZipCodeLabel.Text = "ZipCode"
         '
-        'StreeTextBox
+        'StreetTextBox
         '
-        Me.StreeTextBox.Location = New System.Drawing.Point(128, 18)
-        Me.StreeTextBox.Name = "StreeTextBox"
-        Me.StreeTextBox.Size = New System.Drawing.Size(184, 20)
-        Me.StreeTextBox.TabIndex = 2
+        Me.StreetTextBox.Location = New System.Drawing.Point(128, 18)
+        Me.StreetTextBox.Name = "StreetTextBox"
+        Me.StreetTextBox.Size = New System.Drawing.Size(184, 20)
+        Me.StreetTextBox.TabIndex = 2
         '
         'CityTextBox
         '
         Me.CityTextBox.Location = New System.Drawing.Point(128, 44)
         Me.CityTextBox.Name = "CityTextBox"
         Me.CityTextBox.Size = New System.Drawing.Size(184, 20)
-        Me.CityTextBox.TabIndex = 1
+        Me.CityTextBox.TabIndex = 3
         '
         'ZipCodeTextBox
         '
         Me.ZipCodeTextBox.Location = New System.Drawing.Point(128, 71)
         Me.ZipCodeTextBox.Name = "ZipCodeTextBox"
         Me.ZipCodeTextBox.Size = New System.Drawing.Size(184, 20)
-        Me.ZipCodeTextBox.TabIndex = 0
+        Me.ZipCodeTextBox.TabIndex = 4
         '
         'ListBox
         '
+        Me.ListBox.Font = New System.Drawing.Font("Courier New", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox.FormattingEnabled = True
+        Me.ListBox.ItemHeight = 14
         Me.ListBox.Location = New System.Drawing.Point(12, 226)
         Me.ListBox.Name = "ListBox"
-        Me.ListBox.Size = New System.Drawing.Size(763, 212)
-        Me.ListBox.TabIndex = 1
+        Me.ListBox.Size = New System.Drawing.Size(763, 200)
+        Me.ListBox.TabIndex = 8
         '
         'AddButton
         '
         Me.AddButton.Location = New System.Drawing.Point(362, 34)
         Me.AddButton.Name = "AddButton"
         Me.AddButton.Size = New System.Drawing.Size(77, 39)
-        Me.AddButton.TabIndex = 2
+        Me.AddButton.TabIndex = 5
         Me.AddButton.Text = "Add"
         Me.AddButton.UseVisualStyleBackColor = True
         '
@@ -198,7 +200,7 @@ Partial Class ContactForm
         Me.ChangeButton.Location = New System.Drawing.Point(362, 79)
         Me.ChangeButton.Name = "ChangeButton"
         Me.ChangeButton.Size = New System.Drawing.Size(77, 39)
-        Me.ChangeButton.TabIndex = 3
+        Me.ChangeButton.TabIndex = 6
         Me.ChangeButton.Text = "Change"
         Me.ChangeButton.UseVisualStyleBackColor = True
         '
@@ -207,7 +209,7 @@ Partial Class ContactForm
         Me.DeleteButton.Location = New System.Drawing.Point(362, 124)
         Me.DeleteButton.Name = "DeleteButton"
         Me.DeleteButton.Size = New System.Drawing.Size(77, 39)
-        Me.DeleteButton.TabIndex = 4
+        Me.DeleteButton.TabIndex = 7
         Me.DeleteButton.Text = "Delete"
         Me.DeleteButton.UseVisualStyleBackColor = True
         '
@@ -264,7 +266,7 @@ Partial Class ContactForm
     Friend WithEvents StreetLabel As System.Windows.Forms.Label
     Friend WithEvents CityLabel As System.Windows.Forms.Label
     Friend WithEvents ZipCodeLabel As System.Windows.Forms.Label
-    Friend WithEvents StreeTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents StreetTextBox As System.Windows.Forms.TextBox
     Friend WithEvents CityTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ZipCodeTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ListBox As System.Windows.Forms.ListBox

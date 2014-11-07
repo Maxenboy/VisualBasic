@@ -81,6 +81,6 @@ Public Class Address
     End Function
 
     Public Overrides Function ToString() As String
-        Return String.Format("{0,-20}{1,-10}{2,-10}{3,-10}", m_street, m_zipCode, m_city, m_country)
+        Return String.Format("{0,-40}{1,-10}{2,-10}{3,-10}", m_street, m_zipCode, m_city, m_country)
     End Function
 End Class
