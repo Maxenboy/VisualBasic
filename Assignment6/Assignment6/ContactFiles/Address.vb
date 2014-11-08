@@ -14,7 +14,7 @@ Public Class Address
     Private m_errMessage As String
 
     ''' <summary>
-    ''' A default constructor witch none parameters, chaincalls to the constructor with three parameters
+    ''' A default constructor witch no parameters, chaincalls to the constructor with three parameters
     ''' </summary>
     ''' <remarks></remarks>
     Public Sub New()
@@ -52,7 +52,7 @@ Public Class Address
     ''' </summary>
     ''' <param name="theOther">The address that should be copied</param>
     ''' <remarks></remarks>
-    Public Sub New(theOther As Address)
+    Public Sub New(ByVal theOther As Address)
         Me.m_city = theOther.m_city
         Me.m_street = theOther.m_street
         Me.m_zipCode = theOther.m_zipCode
@@ -60,7 +60,7 @@ Public Class Address
     End Sub
 
     ''' <summary>
-    ''' A propertry with get and set for the city
+    ''' A property with get and set for the city
     ''' </summary>
     ''' <value></value>
     ''' <returns>A string representing the city</returns>
@@ -75,7 +75,7 @@ Public Class Address
     End Property
 
     ''' <summary>
-    ''' A propertry with get and set for the country
+    ''' A property with get and set for the country
     ''' </summary>
     ''' <value></value>
     ''' <returns>A string representating the country</returns>
@@ -90,7 +90,7 @@ Public Class Address
     End Property
 
     ''' <summary>
-    ''' A propertry with get and set for the street
+    ''' A property with get and set for the street
     ''' </summary>
     ''' <value></value>
     ''' <returns>A string representing the street</returns>
@@ -105,7 +105,7 @@ Public Class Address
     End Property
 
     ''' <summary>
-    ''' A propertry with get and set for the zipcode
+    ''' A property with get and set for the zipcode
     ''' </summary>
     ''' <value></value>
     ''' <returns>A string representing the zipcode</returns>
@@ -118,8 +118,9 @@ Public Class Address
             m_zipCode = value
         End Set
     End Property
+
     ''' <summary>
-    ''' A propertry with get for an errormessage
+    ''' A property with get for an errormessage
     ''' </summary>
     ''' <value></value>
     ''' <returns>A string representing an error message</returns>
@@ -131,7 +132,7 @@ Public Class Address
     End Property
 
     ''' <summary>
-    ''' Validates the addresses fileds, the user needs to specify at least a city
+    ''' Validates the addresses fields, the user needs to specify at least a city
     ''' </summary>
     ''' <returns>True if a city is given, False otherwise</returns>
     ''' <remarks></remarks>
@@ -146,7 +147,7 @@ Public Class Address
     ''' <summary>
     ''' Overrides the ToString method, uses String.Format to represent the addresse's different fields
     ''' </summary>
-    ''' <returns></returns>
+    ''' <returns>A string representation of all the addresses fields</returns>
     ''' <remarks></remarks>
     Public Overrides Function ToString() As String
         Return String.Format("{0,-35}{1,-7}{2,-20}{3,-15}", m_street, m_zipCode, m_city, m_country)
