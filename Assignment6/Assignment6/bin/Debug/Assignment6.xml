@@ -6,7 +6,71 @@ Assignment6
 </name>
 </assembly>
 <members>
-<member name="P:Assignment6.My.Resources.Resources.ResourceManager">
+<member name="M:Assignment6.Contact.#ctor">
+	<summary>
+ A default constructor witch no parameters, chaincalls to the constructor with three parameters
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Assignment6.Contact.#ctor(System.String,System.String,Assignment6.Address)">
+	<summary>
+ A constructor with three parameters, is called by the default constructor
+ </summary>
+	<param name="firstName">A contacs firstname</param>
+	<param name="lastName">A contacts lastname</param>
+	<param name="address">A contacts address</param>
+	<remarks></remarks>
+</member><member name="M:Assignment6.Contact.#ctor(Assignment6.Contact)">
+	<summary>
+ A constructor with a contact as parameter, used for copying a contact
+ </summary>
+	<param name="theOther">The contact that should be copied</param>
+	<remarks></remarks>
+</member><member name="P:Assignment6.Contact.AddressData">
+	<summary>
+ A property with get and set for the address
+ </summary>
+	<value></value>
+	<returns>This contacts address</returns>
+	<remarks></remarks>
+</member><member name="P:Assignment6.Contact.FirstName">
+	<summary>
+ A property with get and set for the firstname
+ </summary>
+	<value></value>
+	<returns>A string representing this contacts firstname</returns>
+	<remarks></remarks>
+</member><member name="P:Assignment6.Contact.LastName">
+	<summary>
+ A property with get and set for the lastname
+ </summary>
+	<value></value>
+	<returns>A string representing this contacts lastname</returns>
+	<remarks></remarks>
+</member><member name="P:Assignment6.Contact.FullName">
+	<summary>
+ A property with get for the contacts first- and lastname
+ </summary>
+	<value></value>
+	<returns>A string representing this contacts first- and lastname</returns>
+	<remarks></remarks>
+</member><member name="M:Assignment6.Contact.Validate">
+	<summary>
+ Validates the contacts fields, the address has its own validation, the user needs to specify both first- and lastname
+ </summary>
+	<returns>True if both first- and lastname are given, False otherwise</returns>
+	<remarks></remarks>
+</member><member name="M:Assignment6.Contact.ToString">
+	<summary>
+ Overrides the ToString method, uses String.Format to represent the contacts different fields
+ </summary>
+	<returns>A string representation of all the contacts fields</returns>
+	<remarks></remarks>
+</member><member name="T:Assignment6.Contact">
+	<summary>
+ The class that represents a contact
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Assignment6.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
@@ -19,6 +83,103 @@ Assignment6
 	<summary>
   A strongly-typed resource class, for looking up localized strings, etc.
 </summary>
+</member><member name="M:Assignment6.Address.#ctor">
+	<summary>
+ A default constructor witch no parameters, chaincalls to the constructor with three parameters
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Assignment6.Address.#ctor(System.String,System.String,System.String)">
+	<summary>
+ A constructor with three parameters, is called by the default constructor, chaincalls to the constructor with four parameters
+ </summary>
+	<param name="street">A contacts street</param>
+	<param name="zip">A contacts zipcode</param>
+	<param name="city">A contacts city</param>
+	<remarks></remarks>
+</member><member name="M:Assignment6.Address.#ctor(System.String,System.String,System.String,Assignment6.Countries)">
+	<summary>
+ A constructor with four parameters, is called by the constructor with three parameters
+ </summary>
+	<param name="street">A contacts street</param>
+	<param name="zip">A contacts zipcode</param>
+	<param name="city">A contacts city</param>
+	<param name="country">A contacs country</param>
+	<remarks></remarks>
+</member><member name="M:Assignment6.Address.#ctor(Assignment6.Address)">
+	<summary>
+ A constructor with an address as parameter, used for copying address
+ </summary>
+	<param name="theOther">The address that should be copied</param>
+	<remarks></remarks>
+</member><member name="P:Assignment6.Address.City">
+	<summary>
+ A property with get and set for the city
+ </summary>
+	<value></value>
+	<returns>A string representing the city</returns>
+	<remarks></remarks>
+</member><member name="P:Assignment6.Address.Country">
+	<summary>
+ A property with get and set for the country
+ </summary>
+	<value></value>
+	<returns>A string representating the country</returns>
+	<remarks></remarks>
+</member><member name="P:Assignment6.Address.Street">
+	<summary>
+ A property with get and set for the street
+ </summary>
+	<value></value>
+	<returns>A string representing the street</returns>
+	<remarks></remarks>
+</member><member name="P:Assignment6.Address.ZipCode">
+	<summary>
+ A property with get and set for the zipcode
+ </summary>
+	<value></value>
+	<returns>A string representing the zipcode</returns>
+	<remarks></remarks>
+</member><member name="P:Assignment6.Address.errMessage">
+	<summary>
+ A property with get for an errormessage
+ </summary>
+	<value></value>
+	<returns>A string representing an error message</returns>
+	<remarks></remarks>
+</member><member name="M:Assignment6.Address.Validate">
+	<summary>
+ Validates the addresses fields, the user needs to specify at least a city
+ </summary>
+	<returns>True if a city is given, False otherwise</returns>
+	<remarks></remarks>
+</member><member name="M:Assignment6.Address.ToString">
+	<summary>
+ Overrides the ToString method, uses String.Format to represent the addresse's different fields
+ </summary>
+	<returns>A string representation of all the addresses fields</returns>
+	<remarks></remarks>
+</member><member name="T:Assignment6.Address">
+	<summary>
+ The class that represents a contacts address
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Assignment6.ContactManager.#ctor">
+	<summary>
+ A default constructor with no parameters
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Assignment6.ContactManager.GetContact(System.Int32)">
+	<summary>
+ Gets a specific contact from the list/registry with a given index
+ </summary>
+	<param name="index">The place the contact is stored in the list/registry</param>
+	<returns>Returns the specific contact from the list/registry</returns>
+	<remarks></remarks>
+</member><member name="T:Assignment6.ContactManager">
+	<summary>
+ The class that represents the contact registry, uses a list to store all the contacts
+ </summary>
+	<remarks></remarks>
 </member>
 </members>
 </doc>
